@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Fe Jose Martin" />
+    <meta name="Description" content="Tienda de plantas" />
+    <meta
+      name="keywords"
+      content="plantas, cactus, flores, arboles, abono, suculentas, tierra"
+    />
+    <title>Pagina Principal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://images.vexels.com/media/users/3/136471/isolated/preview/b6a02132d23b214bd704b2db39c05611-logotipo-de-hojas-de-naturaleza.png"
+      type="x-icon"
+    />
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <body class="text-light p-2 fondo-body">
+    <header>
+      <!-- Inicio de Navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"
+            ><img
+              src="https://images.vexels.com/media/users/3/136471/isolated/preview/b6a02132d23b214bd704b2db39c05611-logotipo-de-hojas-de-naturaleza.png"
+              alt="Logo de la empresa"
+              width="30"
+          /></a>
+          <div>
+            <form
+              class="d-flex me-auto mx-auto p-2 largo-search"
+              style="width: 200px"
+              role="search"
+            >
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./html/SobreNosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./html/Tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categoria
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./html/cactus.html"
+                      >Cactus</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./html/suculentas.html"
+                      >Suculentas</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Productos de cuidado</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Menu Navbar Login/Registrar -->
+
+            <div class="d-flex justify-content-center">
+              <button
+                type="button"
+                class="btn btn-success me-3"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Iniciar sesion
+              </button>
+              <a href="./html/Registrarse.html"
+                ><button type="button" class="btn btn-success me-3">
+                  Registrarse
+                </button></a
+              >
+            </div>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered text-success">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Ingresa tus datos
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                      <img src="" alt="" />
+                    </div>
+
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label"
+                          >Email address</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          required
+                          maxlength="30"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label"
+                          >Password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="exampleInputPassword1"
+                          required
+                          minlength="8"
+                          maxlength="30"
+                          pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                        />
+                      </div>
+                      <div class="d-flex justify-content-around">
+                        <div class="py-2">
+                          <button type="submit" class="btn btn-success">
+                            Enviar
+                          </button>
+                        </div>
+                        <div class="py-2">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Cerrar
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer justify-content-between">
+                    <a href="" class="text-success">Recuperar Usuario</a>
+                    <a href="" class="text-success">Recuperar Contraseña</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Final Modal -->
+          </div>
+        </div>
+      </nav>
+      <!-- Final de Navbar -->
+    </header>
+    <main>
+      <div class="d-flex justify-content-center align-items-center">
+        <img
+          src="https://images.vexels.com/media/users/3/136471/isolated/preview/b6a02132d23b214bd704b2db39c05611-logotipo-de-hojas-de-naturaleza.png"
+          alt=""
+          width="50"
+        />
+        <h1 class="text-center m-4">Decora tu hogar</h1>
+        <img
+          src="https://images.vexels.com/media/users/3/136471/isolated/preview/b6a02132d23b214bd704b2db39c05611-logotipo-de-hojas-de-naturaleza.png"
+          alt="Logo de la empresa"
+          width="50"
+        />
+      </div>
+      <!-- Inicio de Carrusel -->
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner contenedor-padre">
+          <div class="carousel-item active">
+            <img
+              src="https://hips.hearstapps.com/hmg-prod/images/dining-houseplants-habitat-6438a44e99ce3.jpeg?crop=1.00xw:0.354xh;0,0.357xh&resize=1200:*"
+              class="d-block w-100"
+              alt="Habitacion decorada de multiples plantas"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.hola.com/imagenes/decoracion/20220204204012/ideas-decoracion-con-plantas-interior-il/1-47-292/elegir-decorar-con-plantas-01t-t.jpg"
+              class="d-block w-100"
+              alt="Habitacion decorada de multiples plantas"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://fdeflor.com.ar/wp-content/uploads/2023/05/Best-Low-Light-Houseplants-FB.jpg"
+              class="d-block w-100"
+              alt="Habitacion decorada de multiples plantas"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Final Carrosuel -->
+
+      <h2 class="text-center m-3">Ofertas</h2>
+      <!-- Inicio cards -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://www.guiadejardineria.com/wp-content/uploads/2018/05/Caracteristicas-de-los-cactus-tipos-y-usos.jpg"
+                class="card-img-top"
+                alt="Cactus"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Cactus oreja de conejo</h5>
+                <p class="card-text">
+                  El cactus es muy valorado, decorativamente por su forma
+                  redondeada y aparentemente acolchada.
+                </p>
+                <ul>
+                  <li>Costo: $500 pesos</li>
+                </ul>
+                <div class="text-center">
+                  <a href="#" class="btn btn-outline-success">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://t2.uc.ltmcdn.com/es/posts/7/1/1/cereus_peruvianus_o_cactus_de_ordenador_51117_5_600.jpg"
+                class="card-img-top"
+                alt="cactus"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Cactus cresta</h5>
+                <p class="card-text">
+                  El cactus cresta, es un cactus con espinas negras. Tallos
+                  crestados y ondulados verdes con manchas
+                </p>
+                <ul>
+                  <li>Costo: $500 pesos</li>
+                </ul>
+                <div class="text-center">
+                  <a href="#" class="btn btn-outline-success">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://t1.uc.ltmcdn.com/es/posts/7/1/1/haworthia_fasciata_o_planta_cebra_51117_7_600.jpg"
+                class="card-img-top"
+                alt="Suculenta"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Planta cebra</h5>
+                <p class="card-text overflow-auto">
+                  Planta cebra es una suculenta ideal para el cultivo de
+                  interior
+                </p>
+                <ul>
+                  <li>Costo: $500 pesos</li>
+                </ul>
+                <div class="text-center">
+                  <a href="#" class="btn btn-outline-success">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Final Cards -->
+    </main>
+
+    <footer>
+      <div class="container-fluid bg-light text-center rounded">
+        <div class="row justify-content-between align-items-center">
+          <div
+            class="col-12 col-md-6 col-lg-3 mb-4 mt-4 d-flex flex-column align-items-center"
+          >
+            <h5 class="text-black my-3">La Naturaleza en tu Hogar</h5>
+            <img
+              src="https://images.vexels.com/media/users/3/136471/isolated/preview/b6a02132d23b214bd704b2db39c05611-logotipo-de-hojas-de-naturaleza.png"
+              alt="Logo de la empresa"
+              width="100"
+            />
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-2 d-flex flex-column align-items-center"
+          >
+            <div>
+              <h5 class="text-black my-3 align-content-center">
+                Redes Sociales
+              </h5>
+            </div>
+            <div
+              class="d-flex flex-row align-items-center"
+              class="text-decoration-none"
+            >
+              <div class="align-items-center">
+                <a
+                  href="https://www.facebook.com/"
+                  class="text-decoration-none"
+                >
+                  <img
+                    src="https://i.pinimg.com/originals/ce/c8/a6/cec8a6239de29acbfcfee0ccec995b9f.png"
+                    alt="Logo de Facebook"
+                    width="35"
+                  />
+                  <p class="text-black px-2">Facebook</p>
+                </a>
+              </div>
+              <div class="align-items-center px-2">
+                <a
+                  href="https://www.instagram.com/"
+                  class="text-decoration-none"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
+                    alt="Logo de instagram"
+                    width="35"
+                  />
+                  <p class="text-black px-2">Instagram</p>
+                </a>
+              </div>
+              <div class="align-items-center px-2">
+                <a
+                  href="https://www.tiktok.com/es/"
+                  class="text-decoration-none"
+                >
+                  <img
+                    src="https://blog.hootsuite.com/wp-content/uploads/2021/05/all-apps-11.png"
+                    alt="Logo de tiktok"
+                    width="35"
+                  />
+                  <p class="text-black px-2">TikTok</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 mb-4 d-flex flex-column align-items-center"
+          >
+            <h5 class="text-black my-3">Dirección</h5>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1023709808883!2d-65.20977672457049!3d-26.836696090031815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1698237465000!5m2!1ses-419!2sar"
+              width="250"
+              height="100"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="container text-center text-dark pb-2">
+            <p>
+              &copy; 2023 La Naturaleza en tu HOGAR. Todos los derechos
+              reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</html>
